@@ -1,0 +1,68 @@
+BLOCO 1 — Condicionais com “pensamento de classificação”
+(Prepara mapeamento → depois vira tabela, hash, etc.)
+
+1) Validador de idade
+Leia uma idade.
+Se:
+< 0 → “Inválido”
+0–12 → Criança
+13–17 → Adolescente
+18–59 → Adulto
+60+ → Idoso
+Semente futura: classificação de dados
+
+2) Número especial
+Leia um número e diga se ele é:
+par ou ímpar
+positivo ou negativo
+múltiplo de 5
+Semente futura: filtros em conjuntos
+
+3) Código de acesso
+Leia um número:
+Se for:
+1 → Administrador
+2 → Professor
+3 → Aluno
+outro → Visitante
+Semente futura: mapeamento de chaves → valores
+
+BLOCO 2 — Laços com contagem
+(Prepara frequência → base de hash e histogramas)
+
+4) Quantos positivos?
+Leia 5 números.
+Conte:
+quantos são positivos
+quantos são negativos
+quantos são zero
+Semente futura: contagem de ocorrência
+
+5) Quantos pares?
+Leia números até digitar -1.
+Conte:
+quantos são pares
+quantos são ímpares
+Semente futura: stream de dados
+
+6) Maior número digitado
+Leia números até digitar 0.
+Mostre o maior número informado.
+Semente futura: busca de máximo
+
+BLOCO 3 — Agregação (base de estatística em estruturas)
+7) Soma e média
+Leia números até digitar -1.
+Mostre:
+soma
+média
+quantidade de números
+Semente futura: redução (reduce)
+
+8) Quantos acima da média?
+(2 passos)
+Leia números até -1
+Calcule média
+Depois peça que o usuário digite novamente a mesma sequência.
+Conte quantos estão acima da média.
+Semente futura: análise de dados
