@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define N 5
+#define N 4
 
 int preencherVetor(int vet[]);
+int gerarNumeroAleatorio(void);
 int mostrarVetor(int vet[]);
 int maiorValor(int vet[]);
 int menorValor(int vet[]);
@@ -13,19 +14,23 @@ int calcularQtdImpar(int vet[]);
 
 int main(){
     int vet[N];
+    srand(time(NULL));
     preencherVetor(vet);
     mostrarVetor(vet);
     printf("Maior: %d\n",maiorValor(vet));    
     printf("Menor: %d\n",menorValor(vet));    
-    printf("Média: %g\n",calcularMedia(vet));    
+        printf("Média: %g\n",calcularMedia(vet));    
     printf("Qtd de pares: %d\n",calcularQtdPar(vet));    
     printf("Qtd de ímpares: %d\n",calcularQtdImpar(vet));    
 }
 
 int preencherVetor(int vet[]){
-    srand(time(NULL));
     for(int i=0; i<N; i++)
-    vet[i]=rand()%11;
+    vet[i]=gerarNumeroAleatorio();
+}
+
+int gerarNumeroAleatorio(){
+    return rand()%11;
 }
 
 int mostrarVetor(int vet[]){
